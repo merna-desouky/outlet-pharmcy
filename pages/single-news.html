@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/imgs/LOGO.svg" />
+
+    <title>معرفة</title>
+    <!-- bootstrap style -->
+    <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+            integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.rtl.min.css"
+      integrity="sha512-wO8UDakauoJxzvyadv1Fm/9x/9nsaNyoTmtsv7vt3/xGsug25X7fCUWEyBh1kop5fLjlcrK3GMVg8V+unYmrVA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.1.0/swiper-bundle.css"
+      integrity="sha512-xXQQj99PFpHikerkvc6HrA+dFLC14dMyBh0eL8fCan9h3n8Uhxvq5Os8ysEvn3oTLWJTte9kl5FFEftf2KfyHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+      integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css?v=123" />
+  </head>
+  <body>
+    <!-- start of appbar -->
+    <div class="devolum-appbar">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="appbar">
+              <a class="logo" href="../index.html">
+                <img
+                  src="../assets/imgs/LOGO.svg"
+                  alt="logo"
+                  class="img-fluid"
+                />
+              </a>
+              <span onclick="openNav()" class="mob-menu"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+              <div class="pages">
+                <ul>
+                  <li><a href="../index.html" class="active">الرئيسية</a></li>
+                  <li><a href="offers.html">العروض</a></li>
+                  <li><a href="#">المنتجات</a></li>
+                  <li><a href="#">الخدمات</a></li>
+                  <li><a href="branches.html">الفروع</a></li>
+                  <li><a href="#">سياسة التبديل والاسترجاع </a></li>
+                  <li><a href="#">برنامج الولاء (توفير )</a></li>
+                </ul>
+              </div>
+              <div><a class="mybtn" href="#">اتصل بنا</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav" style="transform: translateX(100%)">
+      <div class="topbar">
+        <a class="mylogo" href="../index.html">
+          <img
+            src="../assets/imgs/logo.svg"
+            alt="logo"
+            class="img-fluid"
+            loading="lazy"
+          />
+        </a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          ><i class="fa-solid fa-xmark"></i
+        ></a>
+      </div>
+
+      <div class="links">
+        <ul class="list-unstyled ps-0">
+          <li><a href="../index.html" class="active">الرئيسية</a></li>
+          <li><a href="offers.html">العروض</a></li>
+          <li><a href="#">المنتجات</a></li>
+          <li><a href="#">الخدمات</a></li>
+          <li><a href="branches.html">الفروع</a></li>
+          <li><a href="#">سياسة التبديل والاسترجاع </a></li>
+          <li><a href="#">برنامج الولاء (توفير )</a></li>
+        </ul>
+
+        <a href="#"><div class="contact-btn">اتصل بنا</div></a>
+      </div>
+    </div>
+    <!-- end of appbar -->
+
+    <section class="devolum-pages-intro">
+      <img src="../assets/imgs/vec3.png" alt="vec" class="vec3 img-fluid" />
+      <img src="../assets/imgs/vec4.png" alt="vec" class="vec4 img-fluid" />
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="intro-headline">
+              <h2>مدونة صيدلية اوتليت <span>اوتليت</span></h2>
+              <span class="sub-title"> شاهد اخر اخبار صيدلية اوتليت </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="devolum-single-news">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 col-sm-12">
+            <div class="myimg">
+              <img
+                src="../assets/imgs/single.png"
+                alt="news"
+                class="img-fluid"
+              />
+            </div>
+            <div class="content">
+              <div class="title">ترقبوا افتتاح فرعنا الجديد</div>
+              <p>
+                وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي
+                الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان
+                لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر
+                عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها
+                من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة
+                قرون من الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً
+                وبشكله الأصلي في الطباعة والتنضيد الإلكتروني. انتشر بشكل كبير في
+                ستينيّات هذا القرن مع إصدار رقائق "ليتراسيت" (Letraset)
+                البلاستيكية تحوي مقاطع من هذا النص، وعاد لينتشر مرة أخرى مؤخراَ
+                مع ظهور برامج النشر الإلكتروني مثل "ألدوس بايج مايكر" (Aldus
+                PageMaker) والتي حوت أيضاً على نسخ من نص لوريم إيبسوم. وريم
+              </p>
+              <p>
+                إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل
+                وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم
+                إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما
+                قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص،
+                لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من
+                الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله
+                الأصلي في الطباعة والتنضيد الإلكتروني. انتشر بشكل كبير في
+                ستينيّات هذا القرن مع إصدار رقائق "ليتراسيت" (Letraset)
+                البلاستيكية تحوي مقاطع من هذا النص، وعاد لينتشر مرة أخرى مؤخراَ
+                مع ظهور برامج النشر الإلكتروني مثل "ألدوس بايج مايكر" (Aldus
+                PageMaker) والتي حوت أيضاً على نسخ من نص لوريم إيبسوم.وريم
+                إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل
+                وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم
+                إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما
+                قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص،
+                لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من
+                الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله
+                الأصلي في الطباعة والتنضيد الإلكتروني. انتشر بشكل كبير في
+                ستينيّات هذا القرن مع إصدار رقائق "ليتراسيت" (Letraset)
+                البلاستيكية تحوي مقاطع من هذا النص، وعاد لينتشر مرة أخرى مؤخراَ
+                مع ظهور برامج النشر الإلكتروني مثل "ألدوس بايج مايكر" (Aldus
+                PageMaker) والتي حوت أيضاً على نسخ من نص لوريم إيبسوم. وريم
+              </p>
+              <p>
+                إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل
+                وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم
+                إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما
+                قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص،
+                لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من
+                الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله
+                الأصلي في الطباعة والتنضيد الإلكتروني. انتشر بشكل كبير في
+                ستينيّات هذا القرن مع إصدار رقائق "ليتراسيت" (Letraset)
+                البلاستيكية تحوي مقاطع من هذا النص، وعاد لينتشر مرة أخرى مؤخراَ
+                مع ظهور برامج النشر الإلكتروني مثل "ألدوس بايج مايكر" (Aldus
+                PageMaker) والتي حوت أيضاً على نسخ من نص لوريم إيبسوم.
+              </p>
+
+              <div class="bottom">
+                <div class="mybadge-content">
+                  <img
+                    src="../assets/imgs/timer.png"
+                    alt="timer"
+                    class="img-fluid"
+                  />
+                  15 مارس 2023
+                </div>
+                <div class="social">
+                  <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="#"> <i class="fa-brands fa-snapchat"></i> </a>
+                  <a href="#"> <i class="fa-brands fa-telegram"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="devolum-blog">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="headline">
+              <h3>اهم الأخبار</h3>
+              <span class="sub-title"> شاهد اهم اخبار صيدلية اوتليت </span>
+            </div>
+            <div class="myswiper">
+              <div class="swiper blog-swiper mb-4">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="blog-card">
+                      <div class="blog-img">
+                        <img
+                          src="../assets/imgs/gallery1.png"
+                          alt="gallery"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="blog-content">
+                        <div class="mybadge-content">
+                          <img
+                            src="../assets/imgs/timer.png"
+                            alt="timer"
+                            class="img-fluid"
+                          />
+                          15 مارس 2023
+                        </div>
+                        <div class="blog-name">ترقبوا افتتاح فرعنا الجديد</div>
+                        <div class="desc">
+                          ترقبوا افتتاح فرعنا الجديد بحي المونسية طريق الدمام.
+                        </div>
+                        <div>
+                          <a href="#" class="arrow-btn"
+                            >شاهد المزيد <i class="fa-solid fa-arrow-left"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="blog-card">
+                      <div class="blog-img">
+                        <img
+                          src="../assets/imgs/gallery2.png"
+                          alt="gallery"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="blog-content">
+                        <div class="mybadge-content">
+                          <img
+                            src="../assets/imgs/timer.png"
+                            alt="timer"
+                            class="img-fluid"
+                          />
+                          15 مارس 2023
+                        </div>
+                        <div class="blog-name">ترقبوا افتتاح فرعنا الجديد</div>
+                        <div class="desc">
+                          ترقبوا افتتاح فرعنا الجديد بحي المونسية طريق الدمام.
+                        </div>
+                        <div>
+                          <a href="#" class="arrow-btn"
+                            >شاهد المزيد <i class="fa-solid fa-arrow-left"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="blog-card">
+                      <div class="blog-img">
+                        <img
+                          src="../assets/imgs/gallery2.png"
+                          alt="gallery"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="blog-content">
+                        <div class="mybadge-content">
+                          <img
+                            src="../assets/imgs/timer.png"
+                            alt="timer"
+                            class="img-fluid"
+                          />
+                          15 مارس 2023
+                        </div>
+                        <div class="blog-name">ترقبوا افتتاح فرعنا الجديد</div>
+                        <div class="desc">
+                          ترقبوا افتتاح فرعنا الجديد بحي المونسية طريق الدمام.
+                        </div>
+                        <div>
+                          <a href="#" class="arrow-btn"
+                            >شاهد المزيد <i class="fa-solid fa-arrow-left"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="blog-card">
+                      <div class="blog-img">
+                        <img
+                          src="../assets/imgs/gallery2.png"
+                          alt="gallery"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="blog-content">
+                        <div class="mybadge-content">
+                          <img
+                            src="../assets/imgs/timer.png"
+                            alt="timer"
+                            class="img-fluid"
+                          />
+                          15 مارس 2023
+                        </div>
+                        <div class="blog-name">ترقبوا افتتاح فرعنا الجديد</div>
+                        <div class="desc">
+                          ترقبوا افتتاح فرعنا الجديد بحي المونسية طريق الدمام.
+                        </div>
+                        <div>
+                          <a href="#" class="arrow-btn"
+                            >شاهد المزيد <i class="fa-solid fa-arrow-left"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-btn">
+                <div class="custom-swiper-button-next">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div><a href="#" class="mybtn">شاهد كل المدونة</a></div>
+                <div class="custom-swiper-button-prev">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- start of footer -->
+    <div class="devolum-footer">
+      <div class="container-fluid">
+        <div class="row gy-5">
+          <div class="col-md-4 col-12 d-flex justify-content-md-center">
+            <div class="footer-content">
+              <a class="logo" href="../index.html">
+                <div class="logo-img">
+                  <img
+                    src="../assets/imgs/footer-logo.svg"
+                    class="img-fluid"
+                    alt="logo"
+                  />
+                </div>
+              </a>
+              <p>
+                تأسست صيدلة أوتلت عام 2022م، حيث تميزت عن منافسيها بفكرتها
+                الجديدة في توفير منتجات أصلية بأسعار مخفضة تلبي جميع احتياجات
+                الاسرة
+              </p>
+              <div class="social">
+                <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#"> <i class="fa-brands fa-snapchat"></i> </a>
+                <a href="#"> <i class="fa-brands fa-telegram"></i> </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 d-flex justify-content-md-center">
+            <div class="footer-content">
+              <div class="footer-title">
+                <h4>روابط سريعة</h4>
+              </div>
+
+              <div class="all-links">
+                <a href="../index.html">الرئيسية</a>
+                <a href="#">العروض </a>
+                <a href="#">المنتجات </a>
+                <a href="#"> الفروع </a>
+                <a href="#"> المتجر</a>
+                <a href="#"> سياسة التبديل والاسترجاع </a>
+                <a href="#"> برنامج الولاء (توفير ) </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-12 d-flex justify-content-md-center">
+            <div class="footer-content">
+              <div class="footer-title">
+                <h4>فروعنا</h4>
+              </div>
+              <div class="all-links">
+                <div class="contact">
+                  <div class="social-img">
+                    <img
+                      src="../assets/imgs/phone.png"
+                      alt="phone"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div>
+                    <span> رقم الجوال </span><a href="#">01091167811</a>
+                  </div>
+                </div>
+                <div class="contact">
+                  <div class="social-img">
+                    <img
+                      src="../assets/imgs/email.png"
+                      alt="email"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div>
+                    <span> البريد الإلكتروني </span
+                    ><a href="#"> Marshall_Doyle61@yahoo.com</a>
+                  </div>
+                </div>
+                <div class="contact">
+                  <div class="social-img">
+                    <img
+                      src="../assets/imgs/location.png"
+                      alt="location"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div>
+                    <span> العنوان </span
+                    ><a href="#"> Quia explicabo deleniti recusandae</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="devolum-copy-rights">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="copyrights">
+              <div>جميع الحقوق محفوظة موقع <a href="#">اوتليت</a> @ 2023</div>
+              <div>تصميم وتطوير: ديفوليوم</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="float whats" target="_blank">
+      <i class="fa-brands fa-whatsapp my-float"></i>
+    </a>
+    <a href="#" class="float phone" target="_blank">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+    <!-- end of footer -->
+
+    <!-- js for bootstrap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"
+      integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- js for bootstrap -->
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.1.0/swiper-bundle.min.js"
+      integrity="sha512-4Ooh3fl4STrmn95ZbS/J6l8csp/FvSKPaeDAH/IaPQGJIx9lmpuxXZTCYKR2W5+Bt7i74exPvAT2PsWnac+sow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+      integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

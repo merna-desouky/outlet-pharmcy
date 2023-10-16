@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/imgs/LOGO.svg" />
+
+    <title>معرفة</title>
+    <!-- bootstrap style -->
+    <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+            integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.rtl.min.css"
+      integrity="sha512-wO8UDakauoJxzvyadv1Fm/9x/9nsaNyoTmtsv7vt3/xGsug25X7fCUWEyBh1kop5fLjlcrK3GMVg8V+unYmrVA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.1.0/swiper-bundle.css"
+      integrity="sha512-xXQQj99PFpHikerkvc6HrA+dFLC14dMyBh0eL8fCan9h3n8Uhxvq5Os8ysEvn3oTLWJTte9kl5FFEftf2KfyHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+      integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css?v=123" />
+  </head>
+  <body>
+    <!-- start of appbar -->
+    <div class="devolum-appbar">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="appbar">
+              <div class="logo">
+                <img src="assets/imgs/LOGO.svg" alt="logo" class="img-fluid" />
+              </div>
+              <span onclick="openNav()" class="mob-menu"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+              <div class="pages">
+                <ul>
+                  <li><a href="#" class="active">الرئيسية</a></li>
+                  <li><a href="#">العروض</a></li>
+                  <li><a href="#">المنتجات</a></li>
+                  <li><a href="#">الخدمات</a></li>
+                  <li><a href="#">الفروع</a></li>
+                  <li><a href="#">سياسة التبديل والاسترجاع </a></li>
+                  <li><a href="#">برنامج الولاء (توفير )</a></li>
+                </ul>
+              </div>
+              <div><a class="mybtn" href="#">اتصل بنا</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav" style="transform: translateX(100%)">
+      <div class="topbar">
+        <a class="mylogo" href="index.html">
+          <img
+            src="assets/imgs/logo.svg"
+            alt="logo"
+            class="img-fluid"
+            loading="lazy"
+          />
+        </a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          ><i class="fa-solid fa-xmark"></i
+        ></a>
+      </div>
+
+      <div class="links">
+        <ul class="list-unstyled ps-0">
+          <li><a href="index.html" class="active">الرئيسية</a></li>
+          <li><a href="pages/courses.html">الكورسات</a></li>
+          <li><a href="pages/prices.html">الباقات</a></li>
+        </ul>
+
+        <a href="auth/sign-in.html"><div class="contact-btn">اتصل بنا</div></a>
+      </div>
+    </div>
+    <!-- end of appbar -->
+
+    <section class="devolum-intro">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="intro-img">
+              <img
+                src="assets/imgs/intro.png"
+                alt="cover"
+                class="img img-fluid"
+              />
+              <div class="vec1">
+                <img
+                  src="assets/imgs/yellow-vec.png"
+                  alt="vec"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="vec2">
+                <img
+                  src="assets/imgs/dark-vec.png"
+                  alt="vec"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="intro-text">
+                <div class="name">صيدلية اوتليت</div>
+                <h2>
+                  لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية
+                  هي الشكل
+                </h2>
+                <span
+                  >تأسست صيدلة أوتلت عام 2022م، حيث تميزت عن منافسيها بفكرتها
+                  الجديدة في توفير منتجات أصلية بأسعار مخفضة تلبي جميع احتياجات
+                  الاسرة
+                </span>
+                <div class="all-btns">
+                  <div><a class="mybtn" href="#">المزيد عنا</a></div>
+                  <div>
+                    <a class="go-btn mybtn" href="#"
+                      >اذهب للمتجر <i class="fa-solid fa-arrow-left"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="devolum-cover">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="cover">
+              <img src="assets/imgs/cover.png" alt="cover" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="devolum-about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="headline">
+              <h3>عن صيدلية <span>اوتليت</span></h3>
+              <span class="sub-title"
+                >تعرف علي صيدلية اوتليت في السطور التالية
+              </span>
+            </div>
+            <div class="row gy-5">
+              <div class="col-md-6">
+                <div class="about-img">
+                  <img
+                    src="assets/imgs/about-circular.png"
+                    alt="about"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-content-section">
+                  <div class="title">نظره عامة</div>
+                  <p>
+                    تأسست صيدلة أوتلت عام 2022م، حيث تميزت عن منافسيها بفكرتها
+                    الجديدة في توفير منتجات أصلية بأسعار مخفضة تلبي جميع
+                    احتياجات الاسرة من مستلزمات صحية، طبية، وتجميلية. فتحت
+                    صيدلية اوتلت باب المنافسة في مجال الصيدليات المخفضة داخل
+                    السوق السعودي بعيدًا عن الفكرة النمطية للصيدليات التقليدية،
+                    ولم يقتصر الأمر على المنتجات والأسعار؛ بل وظفت كوادر وطنية
+                    مؤهلة ومدربة لتقديم خدمة عملاء يحتذى بها، مما يجعلها إحدى
+                    أسرع الصيدليات نموًا وانتشارًا في المنطقة.
+                  </p>
+                  <div class="mybtn">المزيد عنا</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="devolum-our-vision">
+      <div class="container-fluid">
+        <div class="row gy-5">
+          <div class="col-md-6">
+            <div class="vision-card">
+              <div class="vision-img">
+                <img
+                  src="assets/imgs/chat.svg"
+                  alt="vision"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="vision-text">
+                <div class="title">الرسالة</div>
+                <p>
+                  نحمل على عاتقنا المسؤولية المجتمعية لتقديم الخدمات الصيدلانية
+                  على أكمل وجه، وذلك من خلال تلبية رغبات عملائنا بمنتجات أصلية
+                  وأسعار منافسة، إضافة لنخبة من الصيادلة والموظفين الأكفاء،
+                  والالتزام الكامل بأخلاق المهنة والسعي إلى التطور المستمر.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="vision-card">
+              <div class="vision-img">
+                <img
+                  src="assets/imgs/vision.svg"
+                  alt="vision"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="vision-text">
+                <div class="title">الرسالة</div>
+                <p>
+                  نحمل على عاتقنا المسؤولية المجتمعية لتقديم الخدمات الصيدلانية
+                  على أكمل وجه، وذلك من خلال تلبية رغبات عملائنا بمنتجات أصلية
+                  وأسعار منافسة، إضافة لنخبة من الصيادلة والموظفين الأكفاء،
+                  والالتزام الكامل بأخلاق المهنة والسعي إلى التطور المستمر.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="devolum-our-values">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="headline">
+              <h3>قيمنا</h3>
+              <span class="sub-title"
+                >تعرف علي صيدلية اوتليت في السطور التالية
+              </span>
+            </div>
+            <div class="row gy-4">
+              <div class="col-md-4">
+                <div class="vision-card">
+                  <div class="vision-img">
+                    <img
+                      src="assets/imgs/team.png"
+                      alt="vision"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="vision-text">
+                    <div class="title">الريادة</div>
+                    <span>بنية فكرة أوتليت علي فكرة ريادية متميزة.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="vision-card">
+                  <div class="vision-img">
+                    <img
+                      src="assets/imgs/handshake.png"
+                      alt="vision"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="vision-text">
+                    <div class="title">التعاون</div>
+                    <span> نعمل بروح الفريق الواحد.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="vision-card">
+                  <div class="vision-img">
+                    <img
+                      src="assets/imgs/shield.png"
+                      alt="vision"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="vision-text">
+                    <div class="title">المصداقية</div>
+                    <span>بنية فكرة أوتليت علي فكرة ريادية متميزة.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="vision-card">
+                  <div class="vision-img">
+                    <img
+                      src="assets/imgs/reward.png"
+                      alt="vision"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="vision-text">
+                    <div class="title">الجودة</div>
+                    <span>بنية فكرة أوتليت علي فكرة ريادية متميزة.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="vision-card">
+                  <div class="vision-img">
+                    <img
+                      src="assets/imgs/aware.png"
+                      alt="vision"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="vision-text">
+                    <div class="title">الإحترام</div>
+                    <span>بنية فكرة أوتليت علي فكرة ريادية متميزة.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="vision-card">
+                  <div class="vision-img">
+                    <img
+                      src="assets/imgs/love.png"
+                      alt="vision"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="vision-text">
+                    <div class="title">الإحترام</div>
+                    <span>بنية فكرة أوتليت علي فكرة ريادية متميزة.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="devolum-points">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="headline">
+              <h3>برنامج <span>ولاء العملاء</span></h3>
+              <span class="sub-title">
+                جمّع نقاطك نتيجة مشترياتك من اوتليت واحصل على خصم كاش باك جسب
+                الجدول التالي، الحد الأدنى لصرف المكافأة 10.000 نقطة (يرجى
+                الاطلاع على شروط وأحكام البرنامج).</span
+              >
+            </div>
+            <div class="row gy-5">
+              <div class="col-md-4">
+                <div class="points-card">
+                  <div class="points-card-content">
+                    <div class="points-img">
+                      <img
+                        src="assets/imgs/drug.png"
+                        alt="drug"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="points-title">الأدوية والفيتامينات</div>
+                    <div class="points-bar">
+                      <div>المشتريات</div>
+                      <span>1000 ريال</span>
+                    </div>
+                    <div class="points-bar">
+                      <div>المكافأة بالريال</div>
+                      <span> 1 ريال</span>
+                    </div>
+                    <div class="points-bar">
+                      <div>المكافأة ك نقاط</div>
+                      <span> 100 نقطة</span>
+                    </div>
+                  </div>
+                  <div class="mybadge">
+                    <div class="mybadge-content">
+                      <img
+                        src="assets/imgs/exclamation.png"
+                        alt="exclamation"
+                        class="img-fluid"
+                      />سيتم تطبيقها من تاريخ 15 مارس 2023
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="points-card">
+                  <div class="points-card-content">
+                    <div class="points-img">
+                      <img
+                        src="assets/imgs/milk.png "
+                        alt="drug"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="points-title">حليب وحفائظ</div>
+                    <div class="points-bar">
+                      <div>المشتريات</div>
+                      <span>1000 ريال</span>
+                    </div>
+                    <div class="points-bar">
+                      <div>المكافأة بالريال</div>
+                      <span> 1 ريال</span>
+                    </div>
+                    <div class="points-bar">
+                      <div>المكافأة ك نقاط</div>
+                      <span> 100 نقطة</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="points-card">
+                  <div class="points-card-content">
+                    <div class="points-img">
+                      <img
+                        src="assets/imgs/emergency.png"
+                        alt="drug"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="points-title">بقية المنتجات</div>
+                    <div class="points-bar">
+                      <div>المشتريات</div>
+                      <span>1000 ريال</span>
+                    </div>
+                    <div class="points-bar">
+                      <div>المكافأة بالريال</div>
+                      <span> 1 ريال</span>
+                    </div>
+                    <div class="points-bar">
+                      <div>المكافأة ك نقاط</div>
+                      <span> 100 نقطة</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="devolum-gallery">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="headline">
+              <h3>معرض الصور</h3>
+              <span class="sub-title"
+                >جميع مقاطع الصور المتعلقة بصيدلية اوتليت
+              </span>
+            </div>
+            <div class="row gy-4">
+              <div class="col-md-2">
+                <div class="gallery-img">
+                  <div class="inside-img">
+                    <img
+                      src="assets/imgs/gallery1.png"
+                      alt="gallery"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="inside-img">
+                    <img
+                      src="assets/imgs/gallery1.png"
+                      alt="gallery"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="gallery-img">
+                  <img
+                    src="assets/imgs/gallery2.png"
+                    alt="gallery"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="gallery-img">
+                  <div class="inside-img">
+                    <img
+                      src="assets/imgs/gallery1.png"
+                      alt="gallery"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="inside-img">
+                    <img
+                      src="assets/imgs/gallery1.png"
+                      alt="gallery"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="gallery-img">
+                  <img
+                    src="assets/imgs/gallery2.png"
+                    alt="gallery"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="devolum-blog">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="headline">
+              <h3>اهم الأخبار</h3>
+              <span class="sub-title"
+                >تعرف علي صيدلية اوتليت في السطور التالية
+              </span>
+            </div>
+            <div class="myswiper">
+              <div class="swiper blog-swiper mb-4">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="blog-card">
+                      <div class="blog-img">
+                        <img
+                          src="assets/imgs/gallery1.png"
+                          alt="gallery"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="blog-content">
+                        <div class="mybadge-content">
+                          <img
+                            src="assets/imgs/timer.png"
+                            alt="timer"
+                            class="img-fluid"
+                          />
+                          15 مارس 2023
+                        </div>
+                        <div class="blog-name">ترقبوا افتتاح فرعنا الجديد</div>
+                        <div class="desc">
+                          ترقبوا افتتاح فرعنا الجديد بحي المونسية طريق الدمام.
+                        </div>
+                        <div>
+                          <a href="#" class="arrow-btn"
+                            >شاهد المزيد <i class="fa-solid fa-arrow-left"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="blog-card">
+                      <div class="blog-img">
+                        <img
+                          src="assets/imgs/gallery2.png"
+                          alt="gallery"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="blog-content">
+                        <div class="mybadge-content">
+                          <img
+                            src="assets/imgs/timer.png"
+                            alt="timer"
+                            class="img-fluid"
+                          />
+                          15 مارس 2023
+                        </div>
+                        <div class="blog-name">ترقبوا افتتاح فرعنا الجديد</div>
+                        <div class="desc">
+                          ترقبوا افتتاح فرعنا الجديد بحي المونسية طريق الدمام.
+                        </div>
+                        <div>
+                          <a href="#" class="arrow-btn"
+                            >شاهد المزيد <i class="fa-solid fa-arrow-left"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="blog-card">
+                      <div class="blog-img">
+                        <img
+                          src="assets/imgs/gallery2.png"
+                          alt="gallery"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="blog-content">
+                        <div class="mybadge-content">
+                          <img
+                            src="assets/imgs/timer.png"
+                            alt="timer"
+                            class="img-fluid"
+                          />
+                          15 مارس 2023
+                        </div>
+                        <div class="blog-name">ترقبوا افتتاح فرعنا الجديد</div>
+                        <div class="desc">
+                          ترقبوا افتتاح فرعنا الجديد بحي المونسية طريق الدمام.
+                        </div>
+                        <div>
+                          <a href="#" class="arrow-btn"
+                            >شاهد المزيد <i class="fa-solid fa-arrow-left"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="blog-card">
+                      <div class="blog-img">
+                        <img
+                          src="assets/imgs/gallery2.png"
+                          alt="gallery"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="blog-content">
+                        <div class="mybadge-content">
+                          <img
+                            src="assets/imgs/timer.png"
+                            alt="timer"
+                            class="img-fluid"
+                          />
+                          15 مارس 2023
+                        </div>
+                        <div class="blog-name">ترقبوا افتتاح فرعنا الجديد</div>
+                        <div class="desc">
+                          ترقبوا افتتاح فرعنا الجديد بحي المونسية طريق الدمام.
+                        </div>
+                        <div>
+                          <a href="#" class="arrow-btn"
+                            >شاهد المزيد <i class="fa-solid fa-arrow-left"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-btn">
+                <div class="custom-swiper-button-next">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div><a href="#" class="mybtn">شاهد كل المدونة</a></div>
+                <div class="custom-swiper-button-prev">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- start of footer -->
+    <div class="devolum-footer">
+      <div class="container-fluid">
+        <div class="row gy-5">
+          <div class="col-md-4 col-12 d-flex justify-content-md-center">
+            <div class="footer-content">
+              <a class="logo" href="index.html">
+                <div class="logo-img">
+                  <img
+                    src="assets/imgs/footer-logo.svg"
+                    class="img-fluid"
+                    alt="logo"
+                  />
+                </div>
+              </a>
+              <p>
+                تأسست صيدلة أوتلت عام 2022م، حيث تميزت عن منافسيها بفكرتها
+                الجديدة في توفير منتجات أصلية بأسعار مخفضة تلبي جميع احتياجات
+                الاسرة
+              </p>
+              <div class="social">
+                <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#"> <i class="fa-brands fa-snapchat"></i> </a>
+                <a href="#"> <i class="fa-brands fa-telegram"></i> </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 d-flex justify-content-md-center">
+            <div class="footer-content">
+              <div class="footer-title">
+                <h4>روابط سريعة</h4>
+              </div>
+
+              <div class="all-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="#">العروض </a>
+                <a href="#">المنتجات </a>
+                <a href="#"> الفروع </a>
+                <a href="#"> المتجر</a>
+                <a href="#"> سياسة التبديل والاسترجاع </a>
+                <a href="#"> برنامج الولاء (توفير ) </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-12 d-flex justify-content-md-center">
+            <div class="footer-content">
+              <div class="footer-title">
+                <h4>فروعنا</h4>
+              </div>
+              <div class="all-links">
+                <div class="contact">
+                  <div class="social-img">
+                    <img
+                      src="assets/imgs/phone.png"
+                      alt="phone"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div>
+                    <span> رقم الجوال </span><a href="#">01091167811</a>
+                  </div>
+                </div>
+                <div class="contact">
+                  <div class="social-img">
+                    <img
+                      src="assets/imgs/email.png"
+                      alt="email"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div>
+                    <span> البريد الإلكتروني </span
+                    ><a href="#"> Marshall_Doyle61@yahoo.com</a>
+                  </div>
+                </div>
+                <div class="contact">
+                  <div class="social-img">
+                    <img
+                      src="assets/imgs/location.png"
+                      alt="location"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div>
+                    <span> العنوان </span
+                    ><a href="#"> Quia explicabo deleniti recusandae</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="devolum-copy-rights">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="copyrights">
+              <div>جميع الحقوق محفوظة موقع <a href="#">اوتليت</a> @ 2023</div>
+              <div>تصميم وتطوير: ديفوليوم</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="float whats" target="_blank">
+      <i class="fa-brands fa-whatsapp my-float"></i>
+    </a>
+    <a href="#" class="float phone" target="_blank">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+    <!-- end of footer -->
+
+    <!-- js for bootstrap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"
+      integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- js for bootstrap -->
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.1.0/swiper-bundle.min.js"
+      integrity="sha512-4Ooh3fl4STrmn95ZbS/J6l8csp/FvSKPaeDAH/IaPQGJIx9lmpuxXZTCYKR2W5+Bt7i74exPvAT2PsWnac+sow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+      integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
