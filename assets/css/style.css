@@ -180,6 +180,9 @@ a {
   background-color: var(--primary-color);
   font-size: 25px;
 }
+.whats:hover {
+  background-color: var(--hover-color);
+}
 
 .phone {
   bottom: 125px;
@@ -187,6 +190,9 @@ a {
   color: var(--base-color);
   background-color: var(--phone-color);
   font-size: 20px;
+}
+.phone:hover {
+  background-color: #4b5054;
 }
 
 .blog-card {
@@ -270,7 +276,12 @@ a {
   align-items: center;
 }
 .arrow-btn i {
+  transition: all 0.3s ease-in-out;
   margin-inline-start: 5px;
+}
+.arrow-btn:hover i {
+  transform: translateX(-10px);
+  transition: all 0.3s ease-in-out;
 }
 
 .points-title {
@@ -292,7 +303,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 5px 0;
+}
+.devolum-appbar .appbar .logo {
+  display: flex;
+  max-width: 80px;
+}
+.devolum-appbar .appbar .logo img {
+  width: 100%;
 }
 .devolum-appbar .appbar .mob-menu {
   display: none;
@@ -380,7 +398,7 @@ a {
 }
 .sidenav .links ul li a {
   color: var(--title-color);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   display: flex;
   width: 100%;
@@ -674,11 +692,16 @@ a {
 
 .devolum-footer {
   margin-bottom: 20px;
+  padding: 0 10px;
   box-shadow: 0px -4px 20px 0px rgba(126, 126, 126, 0.0784313725);
   border-radius: 70px 70px 0px 0px;
 }
 .devolum-footer .footer-content .logo-img {
   margin-bottom: 30px;
+  max-width: 118px;
+}
+.devolum-footer .footer-content .logo-img img {
+  width: 100%;
 }
 .devolum-footer .footer-content p {
   color: var(--sub-title);
@@ -881,6 +904,7 @@ a {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 25px;
+  text-align: center;
 }
 .devolum-single-news .content .bottom {
   display: flex;
@@ -927,7 +951,7 @@ a {
   margin-top: 15px;
 }
 
-.devolum-offers .offer-side-card {
+.devolum-offers .side-card {
   position: relative;
   box-shadow: 0px 0px 20px 0px rgba(126, 126, 126, 0.0784313725);
   border-radius: 35px;
@@ -936,17 +960,25 @@ a {
   align-items: center;
   justify-content: center;
 }
-.devolum-offers .offer-side-card .vec5 {
+.devolum-offers .side-card .vec5 {
   position: absolute;
   top: 0;
   right: 0;
   transform: scale(-1);
 }
-.devolum-offers .offer-side-card .vec6 {
+.devolum-offers .side-card .vec6 {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 113px;
+}
+.devolum-offers .side-card .offer-side-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.devolum-offers .side-card .swiper-pagination-bullet-active {
+  background-color: var(--primary-color);
 }
 .devolum-offers .offer-card {
   box-shadow: 0px 0px 20px 0px rgba(126, 126, 126, 0.0784313725);

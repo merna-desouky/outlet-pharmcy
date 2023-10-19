@@ -179,6 +179,9 @@ a {
   color: var(--title-color);
   background-color: var(--primary-color);
   font-size: 25px;
+  &:hover {
+    background-color: var(--hover-color);
+  }
 }
 .phone {
   bottom: 125px;
@@ -186,6 +189,9 @@ a {
   color: var(--base-color);
   background-color: var(--phone-color);
   font-size: 20px;
+  &:hover {
+    background-color: #4b5054;
+  }
 }
 
 .blog-card {
@@ -267,7 +273,14 @@ a {
   display: flex;
   align-items: center;
   i {
+    transition: all 0.3s ease-in-out;
     margin-inline-start: 5px;
+  }
+  &:hover {
+    i {
+      transform: translateX(-10px);
+      transition: all 0.3s ease-in-out;
+    }
   }
 }
 
@@ -293,7 +306,14 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 5px 0;
+    .logo {
+      display: flex;
+      max-width: 80px;
+      img {
+        width: 100%;
+      }
+    }
     .mob-menu {
       display: none;
       color: var(--primary-color);
@@ -387,7 +407,7 @@ a {
         margin-bottom: 20px;
         a {
           color: var(--title-color);
-          font-size: 20px;
+          font-size: 18px;
           font-weight: 700;
           display: flex;
           width: 100%;
@@ -732,11 +752,16 @@ a {
 //start of footer
 .devolum-footer {
   margin-bottom: 20px;
+  padding: 0 10px;
   box-shadow: 0px -4px 20px 0px #7e7e7e14;
   border-radius: 70px 70px 0px 0px;
   .footer-content {
     .logo-img {
       margin-bottom: 30px;
+      max-width: 118px;
+      img {
+        width: 100%;
+      }
     }
     p {
       color: var(--sub-title);
@@ -947,6 +972,7 @@ a {
       font-size: 30px;
       font-weight: 700;
       margin-bottom: 25px;
+      text-align: center;
     }
     .bottom {
       display: flex;
@@ -1002,7 +1028,7 @@ a {
 
 //offers
 .devolum-offers {
-  .offer-side-card {
+  .side-card {
     position: relative;
     box-shadow: 0px 0px 20px 0px #7e7e7e14;
     border-radius: 35px;
@@ -1010,7 +1036,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-
     .vec5 {
       position: absolute;
       top: 0;
@@ -1022,6 +1047,14 @@ a {
       bottom: 0;
       left: 0;
       width: 113px;
+    }
+    .offer-side-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: var(--primary-color);
     }
   }
   .offer-card {
